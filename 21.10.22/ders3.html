@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ders 4</title>
+</head>
+<body id="ust">
+
+    <h1>Türk bayrağı</h1>
+    <h1>
+        <img src="/images/bayrak.jpg" alt="Türk bayrağı" width="500" height="500" border="5" >
+    </h1>
+    <h1>Necmettin Erbakan Üniversitesi</h1>
+    <img src="/images/neulogo.png" alt="Neü Logo">
+    
+<!--pixel azaldığında görüntülenmesi gereken resim
+    <picture>
+        <source media="(min-width: 100px)" srcset="/images/bayrak.jpg" style="width: 250px;">
+        <img src="" alt="">
+    </picture>
+    
+-->
+
+    <!--Resmi işaretleme SEO özniteliği resmin arama motorlarında çıkmasını sağlıyor-->
+    <figure>
+        <img src="/images/dunya.jpg" alt="Dünya Resim" style="width: 250px;">
+    </figure>
+
+    <!--MAP-AREA Resmimlerde özel bölgeleri linklemek için kulanılır Rectange Kordinat ile bölgelendirilir.-->
+    <img src="/images/pc.jpeg" alt="Bilgisayar" usemap="#haritaadi" style="width: 450px;">
+    <map name="haritaadi">
+    <area shape="rect" coords="34,44 200,210" alt="Bilgisayar" href="https://www.asus.com">    
+    <area shape="rect" coords="400,20,50,50"  alt="mikrofon" href="https://www.rode.com/">    
+    <area shape="rect" coords="20,25,300,300"  alt="masa" href="https://www.ikea.com.tr/">    
+    </map>
+
+    <!--Link işlemleri-->
+
+    <h1>Link(Anchor) oluşturma </h1>
+    <p>Bu metindeki <a href= "https://www.erbakan.edu.tr/" > Necmettin Erbakan Üniversitesi </a>  Yazısına Tıklamak sizi <a href= "https://www.erbakan.edu.tr/" > Necmettin Erbakan Üniversitesi </a>  Sitesine Götürür.</p>
+    <a href="https://www.erbakan.edu.tr/"> <img src="/images/neulogo.png" alt="Neü  Resim" style="width: 250px"> </a>
+    
+    <a href="#ust"> Sayfa Başı </a>
+
+</body></html>
