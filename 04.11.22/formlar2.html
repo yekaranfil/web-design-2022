@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar 2</title>
+</head>
+<body>
+    
+    <h2>Form Elemanlarını Tablo ile Hizalama</h2>
+    <form name="kayit" action="kayit.php" method="get">
+        Adı : <input type="text" name="ad"> <br> <br>
+        Soyad : <input type="text" name="soyad"> <br><br>
+        <input type="image" src="..//images/submit.png" alt="submitbutton" width="48" height="48">
+
+
+        <p>Not :  Görüntü düğmesini etkinleştiren buton eklendi</p>
+
+    </form>
+
+     <h1>Onay kutulari checkbox</h1>
+
+    <form name="onay" action="onay.asp" method="get">
+        <input type="checkbox" id="arac1" name="arac1"> bisikletim var <br>
+        <input type="checkbox" id="arac2" name="arac2" value="motorsiklet"> 
+        <label for="arac2"> Motorsikletim var </label> <br>
+        <input type="checkbox" id="arac3" name="arac3" value="otomobil"> 
+        <!--Label yazıya da tıklayarak checkboxun işaretlenmesini sağlar-->
+        <label for="arac3">Otomobilim var</label>
+        <input type="checkbox" id="arac4" name="arac4"> Trenim var <br>
+
+
+
+    </form>
+</body>
+</html>
