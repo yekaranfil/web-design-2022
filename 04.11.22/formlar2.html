@@ -7,16 +7,12 @@
     <title>Formlar 2</title>
 </head>
 <body>
-    
     <h2>Form Elemanlarını Tablo ile Hizalama</h2>
     <form name="kayit" action="kayit.php" method="get">
         Adı : <input type="text" name="ad"> <br> <br>
         Soyad : <input type="text" name="soyad"> <br><br>
         <input type="image" src="..//images/submit.png" alt="submitbutton" width="48" height="48">
-
-
         <p>Not :  Görüntü düğmesini etkinleştiren buton eklendi</p>
-
     </form>
      <h1>Onay kutulari checkbox</h1>
     <form name="onay" action="onay.asp" method="get">
@@ -27,13 +23,8 @@
         <!--Label yazıya da tıklayarak checkboxun işaretlenmesini sağlar-->
         <label for="arac3">Otomobilim var</label>
         <input type="checkbox" id="arac4" name="arac4"> Trenim var <br>
-
-
-
     </form>
-
     <h1>Radiobutonlar</h1>
-
     <form name="onay" action="onay.asp" method="get">
         <input type="radio" id="html" name="favori_dil" value="HTML">
         <label for="html"> HTML </label> <br>
@@ -42,9 +33,36 @@
         <!--Checked radiobutonun Seçili olarak gelmesini sağlıyor-->
         <input type="radio" id="Java" name="favori_dil" value="JAVA" checked > 
         <label for="Java" > JAVA </label> <br>
-
-
-
     </form>
+
+    <h1>Select Etiketi bir açılır liste tanımlar</h1>
+    <h2>Bir Otomobil Markası Seçiniz</h2>
+    <form action="kayit.php" name="tercih" method="get"> 
+        <label for="arabalar">Bir otomobil markası seçiniz </label>
+        <!--Size etiketi listede gözükecek elemean sayısını belirtir.-->
+        <!--Multiple birden fazla seçim yapmaya yarar.-->
+        <select name="arabalar" id="arabalar"  >
+
+            <optgroup label="Alman Arabaları">
+                <option value="Bmw"> Bmw</option>
+                <option value="Audi"> Audi</option>
+                <option value="Mercedes" selected> Mercedes</option>
+            </optgroup>
+        
+            <optgroup label="Fransız Arabaları">
+                <option value="Renault"> Renault</option>
+                <option value="Pegout"> Pegout</option>
+            </optgroup>
+
+            <optgroup label="Japon Arabaları">
+                <option value="Supra"> Supra</option>
+                <option value="Honda"> Honda</option>
+            </optgroup>
+
+           
+        </select>
+        <input type="submit" name="arabalar" id="arabalar" value="Gönder">
+    </form>
+
 </body>
 </html>
