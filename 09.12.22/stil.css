@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+  }
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+  css-7.html
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <link rel="stylesheet" href="stil.css" type="text/css">
+      </head>
+      <body>
+          <h1>Bu bir başlık</h1>
+          <p>Bu bir paragraf</p>
+      </body>
+  </html>
