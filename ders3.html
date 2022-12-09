@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
+    <head></head>
 <body>
-    <h1>Türk bayrağı</h1>
-    <h1>
-        <img src="images/bayrak.jpg" alt="Türk bayrağı" width="500" height="500">
-    </h1>
-    <h1>Necmettin Erbakan Üniversitesi</h1>
-    
+    <h1>HTML picture öğesi</h1>
+    <picture>
+        <source media="(min-width: 650px)" srcset="resimler/yiyecekler.jpg">
+        <source media="(min-width: 465px)" srcset="resimler/araba.jpg">
+        <img src="resimler/insan.jpg" style="width:auto;">
+    </picture>
+    <p>Farklı görüntü alanı boyutlarında yüklenen resmin farklı sürümlerini görmek için tarayıcıyı yeniden boyutlandırın. Tarayıcı, ortam sorgusunun kullanıcının mevcut görüntü alanı genişliğiyle eşleştiği ilk kaynak öğeyi arar  ve srcset özniteliğinde belirtilen görüntüyü getirir.</p>
+    <p>img öğesi, resim bildirim bloğunun son alt etiketi olarak gereklidir. img öğesi, resim öğesini desteklemeyen tarayıcılar için veya kaynak etiketlerden hiçbiri eşleşmediyse geriye dönük uyumluluk sağlamak için kullanılır.</p>
+    <p><strong>Note:</strong> Resim öğesi, IE12 ve önceki sürümlerde veya Safari 9.0 ve önceki sürümlerde desteklenmez.</p>
 </body>
 </html>
